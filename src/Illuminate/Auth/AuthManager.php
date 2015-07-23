@@ -29,7 +29,7 @@ class AuthManager extends Manager
         }
 
         if (method_exists($guard, 'setRequest')) {
-            $guard->setRequest($this->app->refresh('request', $guard, 'setRequest'));   
+            $guard->setRequest($this->app->refresh('request', $guard, 'setRequest'));
         }
         
         return $guard;
